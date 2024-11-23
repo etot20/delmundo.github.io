@@ -14,7 +14,19 @@
             height: 100vh;
             margin: 0;
             background-color: #f4f4f4;
+            opacity: 0; /* Initially transparent */
+            animation: fadeIn 1.5s ease-in-out forwards; /* Fade-in effect */
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
         .container {
             text-align: center;
             padding: 20px;
@@ -23,18 +35,21 @@
             background: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
             color: pink; /* Ensures the text is pink */
             font-weight: bold; /* Ensures the text is bold */
         }
+
         img {
-            max-width: 60%;
+            max-width: 50%;
             height: auto;
             margin-bottom: 20px;
             border-radius: 10px; /* Optional: adds rounded corners to the image */
         }
+
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -45,6 +60,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
+
         button:hover {
             background-color: #0056b3;
         }
@@ -66,4 +82,3 @@
     </script>
 </body>
 </html>
-
